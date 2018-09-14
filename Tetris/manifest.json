@@ -1,0 +1,38 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/RootScene.js",
+		"bin-debug/GameScene/BrickContainer.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/CommonUtils/AccountUtils.js",
+		"bin-debug/CommonUtils/BitmapUtils.js",
+		"bin-debug/CommonUtils/LoggerUtil.js",
+		"bin-debug/CommonUtils/NumberUtils.js",
+		"bin-debug/CommonUtils/StageUtils.js",
+		"bin-debug/GameScene/AddLine.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/GameScene/BrickShape.js",
+		"bin-debug/GameScene/GameOverScene.js",
+		"bin-debug/GameScene/GamePauseScene.js",
+		"bin-debug/GameScene/IconUI.js",
+		"bin-debug/GameScene/LoadScene.js",
+		"bin-debug/GameScene/MainGameScene.js",
+		"bin-debug/GameScene/PrevueArea.js",
+		"bin-debug/GameScene/ProgressView.js",
+		"bin-debug/GameScene/SurpassView.js",
+		"bin-debug/Settings/BrickSetting.js",
+		"bin-debug/Settings/GameSetting.js"
+	]
+}

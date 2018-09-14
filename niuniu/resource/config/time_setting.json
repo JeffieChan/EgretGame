@@ -1,0 +1,12 @@
+{
+    "pokerMoveInterval":1000,
+    "sendPokerInterval":50,
+    "playDiceInterval":1000,
+    "diceMoveInterval":300,
+    "pokerWaitInterval":1000,
+    "pokerRotationInterval":200,
+    "settleInterval":800,
+    "betWaitInterval":500,
+    "alertWaitInterval":1000
+    
+}

@@ -1,0 +1,48 @@
+/**
+ * 游戏主启动类
+ */
+class Main extends eui.UILayer {
+    public static mainObject:Main;
+    private loadingView: LoadingUI;
+    private serverConnectView:ConnectingUI;
+    private failedInitRoomView:ConnectingUI;
+    private userToken:string;
+    
+    private onBeforeGateConnect(thisObj:any){
+        if(!thisObj)
+            return;
+        thisObj.serverConnectView = new ConnectingUI("正在连接游戏网关服务器...");
+        thisObj.addChild(thisObj.serverConnectView);
+    }
+    private onUserEnterSuccess(data,thisObj:any){
+        console.log("主界面处理用户进入成功");
+    }
+    private onUserEnterFailed(data,thisObj:any){
+        console.log("主界面处理用户进入失败");
+        thisObj.serverConnectView.setConnectingText("登录游戏服务器失败");
+        return;
+    }
+    private onGateServerConnectFailed(data,thisObj:any){
+        if(!data){
+            thisObj.serverConnectView = new ConnectingUI("连接游戏网关服务器失败...");
+            return;
+        }
+        thisObj.serverConnectView = new ConnectingUI("连接游戏网关服务器失败... \r\n" + data.msg);
+    }
+    private onGateServerConnected(thisObj:any){
+        Server.Connector.startConnectToGameServer(thisObj.onBeforeGameServerConnect,thisObj.onGameServerConnected,thisObj)
+    }
+    private onBeforeGameServerConnect(thisObj:any){
+        if(!thisObj)
+            return;
+        if(!thisObj.serverConnectView)
+            return;
+        thisObj.serverConnectView.setConnectingText("成功获取游戏服务器，正在连接...");
+    }
+    private onGameServerConnected(thisObj:any){
+        thisObj.removeChild(thisObj.serverConnectView);
+        // 连接游戏服务器成功，打开游戏主界面
+        GameScenes.GameSceneManager.pushScene(GameScenes.PlayTableScene,Settings.GameSettingUtils.gameSetting,Main.mainObject.userToken,thisObj.stage.stageWidth);
+    }
+
+}

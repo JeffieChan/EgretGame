@@ -1,0 +1,33 @@
+{
+    "bgColor": "0x000000",
+    "alpha": 0.5,
+    "title":{
+        "titleText":"走势图",
+        "textColor":"0xffffff",
+        "textSize":35,
+        "titleWidth":750,
+        "top":209,
+        "font":"苹方"
+    },
+    "icon": "弹出面板_png",
+    "closeIcon":"关闭按钮_png",
+    "header": {
+        "title":"近10局胜率",
+        "left":91,
+        "top":285,
+        "textColor":"0xa86d3d",
+        "textSize":30,
+        "text1":"胜",
+        "text1X":488,
+        "text2":"平",
+        "padding1":5,
+        "padding2":13,
+        "text3":"负",
+        "iconTop":292,
+        "winIcon":"胜2_png",
+        "winIconX":522,
+        "tieIcon":"平2_png",
+        "loseIcon":"负2_png",
+        "font": "苹方"
+    }
+}

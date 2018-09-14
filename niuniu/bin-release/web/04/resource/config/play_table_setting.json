@@ -1,0 +1,193 @@
+{
+    "gameName": "niuniu",
+    "globalWidth": 750,
+    "globalHeight": 1334,
+    "bitmapTextFont":"font_fnt",
+    "title": {
+        "titleText": "牛牛",
+        "titleHeight": 128,
+        "titleBgColor": 0,
+        "titleBgAlpha": 0.5,
+        "textColor": "0xffffff",
+        "textSize": 30,
+        "text1Color": "0xee9447",
+        "text1Size": 20,
+        "titleWidth": 750,
+        "top": 68,
+        "padding":2,
+        "font": "苹方"
+    },
+    "helpBtn": {
+        "iconName": "玩法按钮_png",
+        "left": 655,
+        "top": 143
+    },
+    "trendBtn": {
+        "iconName": "趋势图按钮_png",
+        "left": 655,
+        "top": 242
+    },
+    "recordBtn": {
+        "iconName": "记录按钮_png",
+        "left": 655,
+        "top": 342
+    },
+    "onLineIcon": {
+        "iconName": "在线人数_png",
+        "left": 652,
+        "top": 1110,
+        "textColor": "0xffa71d",
+        "textSize": 20,
+        "font": "苹方"
+    },
+    "host": {
+        "iconName": "系统庄_png",
+        "left": 263,
+        "top": 179
+    },
+    "betStatistics": {
+        "iconName": "本期投注底_png",
+        "left": 18,
+        "top": 845,
+        "title": "本期投注",
+        "titlePaddingToTop": 10,
+        "textColor": "0xffa71d",
+        "numberColor": "0xffd801",
+        "textSize": 24,
+        "playerTFLeftPadding": 40,
+        "betNumTFLeftPadding": 42,
+        "betNumTFTopPadding": 42,
+        "playerTFWidth": 48,
+        "play1Name": "青龙",
+        "play1NameTop": 896,
+        "play2Name": "白虎",
+        "play3Name": "玄武",
+        "play4Name": "闲",
+        "play5Name": "桥",
+        "font": "苹方"
+    },
+    "ownBetNum": {
+        "iconName": "猜豆ico_png",
+        "left": 30,
+        "top": 1126,
+        "textSize": 30,
+        "textColor": "0xffd801",
+        "textBgColor": "0x240c05",
+        "borderColor": "0x935825",
+        "radius": 10,
+        "width": 189,
+        "height": 39,
+        "padding":10,
+        "font": "苹方"
+    },
+    "playerQL": {
+        "iconName": "投注区-青龙_png",
+        "left": 13,
+        "top": 543,
+        "textSize": 30,
+        "textColor": 0,
+        "textX": 58,
+        "titleHeight": 35,
+        "font": "苹方"
+    },
+    "playerBH": {
+        "iconName": "投注区-白虎_png",
+        "left": 504,
+        "top": 543,
+        "textSize": 30,
+        "textColor": 0,
+        "textX": 58,
+        "titleHeight": 35,
+        "font": "苹方"
+    },
+    "playerXW": {
+        "iconName": "投注区-玄武_png",
+        "left": 260,
+        "top": 824,
+        "textSize": 30,
+        "textColor": 0,
+        "textX": 58,
+        "titleHeight": 35,
+        "font": "苹方"
+    },
+    "playerX": {
+        "iconName": "投注区-闲_png",
+        "left": 260,
+        "top": 342,
+        "textSize": 30,
+        "textColor": 0,
+        "textX": 58,
+        "titleHeight": 35,
+        "font": "苹方"
+    },
+    "playerQ": {
+        "iconName": "桥_png",
+        "left": 260,
+        "top": 543,
+        "textSize": 30,
+        "textColor": 0,
+        "textX": 58,
+        "titleHeight": 35,
+        "font": "苹方"
+    },
+    "poker": {
+        "iconName": "背_png",
+        "left": 59,
+        "top": 190,
+        "padding": 4
+    },
+    "countDownTimer": {
+        "iconName": "倒计时时钟_png",
+        "bgIconName": "倒计时时钟-字暗底_png",
+        "padding": -20,
+        "left": 15,
+        "top": 133,
+        "textSize": 24,
+        "textColor": "0xdab866",
+        "noticeColor":"0xff0000",
+        "font": "苹方",
+        "fontName":"font_fnt"
+    },
+    "alert": {
+        "iconName": "弹出提示暗色底_png",
+        "fontName": "font1_fnt",
+        "startIconName":"开始下注_png",
+        "stopIconName":"停止下注_png",
+        "left": 0,
+        "top": 100
+    },
+    "dice":{
+        "name":"摇骰子",
+        "pngUrl":"resource/assets/images/animaition/摇骰子.png",
+        "jsonUrl":"resource/assets/images/animaition/摇骰子.json",
+        "pointX":458,
+        "pointY":528,
+        "left":259,
+        "top":550,
+        "areaWidth":243,
+        "areaHeight":243,
+        "dicePaddingX":25,
+        "dicePaddingY":38,
+        "dicePadding":18,
+        "count":32
+        
+    },
+    "shuffle":{
+        "name":"洗牌",
+        "pngUrl":"resource/assets/images/animaition/洗牌.png",
+        "jsonUrl":"resource/assets/images/animaition/洗牌.json",
+        "poinX":59,
+        "pointY":185,
+        "padding":4,
+        "poker":{
+             "iconName": "背_png",
+        "left": 59,
+        "top": 190,
+        "padding": 4
+        }
+        
+    }
+    
+   
+    
+}

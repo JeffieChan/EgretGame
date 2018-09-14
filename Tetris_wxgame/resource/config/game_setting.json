@@ -1,0 +1,25 @@
+{
+    "gameName": "Tetris",
+    "globalWidth": 750,
+    "globalHeight": 1334,
+    "startBtn": {
+        "iconName": "开始游戏按钮_png",
+        "left": 245,
+        "top": 725
+    },
+    "rankingListBtn": {
+        "iconName": "排行b_png",
+        "left": 72,
+        "top": 1130
+    },
+    "scoreBtn": {
+        "iconName": "成绩b_png",
+        "left": 290,
+        "top": 1130
+    },
+    "giftBtn": {
+        "iconName": "礼包b_png",
+        "left": 524,
+        "top": 1130
+    }
+}

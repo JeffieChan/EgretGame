@@ -1,0 +1,210 @@
+{
+	"groups": [
+		{
+			"keys": "bg_png,play_table_setting_json,icon_title_png,icon_gold_png,icon_help_png,bg_member_count_png,icon_more_account_png,icon_trend_png,icon_history_png,bg_number_panel_png,dice_1_png,dice_2_png,dice_3_png,dice_4_png,dice_5_png,dice_6_png,dice_0_png,icon_countdown_png,icon_bet_coin_png,trend_setting_json,icon_back_white_png,icon_back_black_png,history_setting_json,help_setting_json,history_setting2_json,help_setting2_json,api_setting_json,errormessage_setting_json,icon_default_account_png,mybet_setting_json,dice_1_b_png,dice_2_b_png,dice_3_b_png,dice_4_b_png,dice_5_b_png,dice_6_b_png,mybet_detail_setting_json,account_list_setting_json,icon_png,server_gate_setting_json",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "images/bg.png"
+		},
+		{
+			"name": "play_table_setting_json",
+			"type": "json",
+			"url": "config/play_table_setting.json"
+		},
+		{
+			"name": "icon_title_png",
+			"type": "image",
+			"url": "images/icon_title.png"
+		},
+		{
+			"name": "icon_gold_png",
+			"type": "image",
+			"url": "images/icon_gold.png"
+		},
+		{
+			"name": "icon_help_png",
+			"type": "image",
+			"url": "images/icon_help.png"
+		},
+		{
+			"name": "bg_member_count_png",
+			"type": "image",
+			"url": "images/bg_member_count.png"
+		},
+		{
+			"name": "icon_more_account_png",
+			"type": "image",
+			"url": "images/icon_more_account.png"
+		},
+		{
+			"name": "icon_trend_png",
+			"type": "image",
+			"url": "images/icon_trend.png"
+		},
+		{
+			"name": "icon_history_png",
+			"type": "image",
+			"url": "images/icon_history.png"
+		},
+		{
+			"name": "bg_number_panel_png",
+			"type": "image",
+			"url": "images/bg_number_panel.png"
+		},
+		{
+			"name": "dice_1_png",
+			"type": "image",
+			"url": "images/dice_1.png"
+		},
+		{
+			"name": "dice_2_png",
+			"type": "image",
+			"url": "images/dice_2.png"
+		},
+		{
+			"name": "dice_3_png",
+			"type": "image",
+			"url": "images/dice_3.png"
+		},
+		{
+			"name": "dice_4_png",
+			"type": "image",
+			"url": "images/dice_4.png"
+		},
+		{
+			"name": "dice_5_png",
+			"type": "image",
+			"url": "images/dice_5.png"
+		},
+		{
+			"name": "dice_6_png",
+			"type": "image",
+			"url": "images/dice_6.png"
+		},
+		{
+			"name": "dice_0_png",
+			"type": "image",
+			"url": "images/dice_0.png"
+		},
+		{
+			"name": "icon_countdown_png",
+			"type": "image",
+			"url": "images/icon_countdown.png"
+		},
+		{
+			"name": "icon_bet_coin_png",
+			"type": "image",
+			"url": "images/icon_bet_coin.png"
+		},
+		{
+			"name": "trend_setting_json",
+			"type": "json",
+			"url": "config/trend_setting.json"
+		},
+		{
+			"name": "icon_back_white_png",
+			"type": "image",
+			"url": "images/icon_back_white.png"
+		},
+		{
+			"name": "icon_back_black_png",
+			"type": "image",
+			"url": "images/icon_back_black.png"
+		},
+		{
+			"name": "history_setting_json",
+			"type": "json",
+			"url": "config/history_setting.json"
+		},
+		{
+			"name": "help_setting_json",
+			"type": "json",
+			"url": "config/help_setting.json"
+		},
+		{
+			"name": "history_setting2_json",
+			"type": "json",
+			"url": "config/history_setting.json"
+		},
+		{
+			"name": "help_setting2_json",
+			"type": "json",
+			"url": "config/help_setting.json"
+		},
+		{
+			"name": "api_setting_json",
+			"type": "json",
+			"url": "config/api_setting.json"
+		},
+		{
+			"name": "errormessage_setting_json",
+			"type": "json",
+			"url": "config/errormessage_setting.json"
+		},
+		{
+			"name": "icon_default_account_png",
+			"type": "image",
+			"url": "images/icon_default_account.png"
+		},
+		{
+			"name": "mybet_setting_json",
+			"type": "json",
+			"url": "config/mybet_setting.json"
+		},
+		{
+			"name": "mybet_detail_setting_json",
+			"type": "json",
+			"url": "config/mybet_detail_setting.json"
+		},
+		{
+			"name": "dice_1_b_png",
+			"type": "image",
+			"url": "images/dice_1_b.png"
+		},
+		{
+			"name": "dice_2_b_png",
+			"type": "image",
+			"url": "images/dice_2_b.png"
+		},
+		{
+			"name": "dice_3_b_png",
+			"type": "image",
+			"url": "images/dice_3_b.png"
+		},
+		{
+			"name": "dice_4_b_png",
+			"type": "image",
+			"url": "images/dice_4_b.png"
+		},
+		{
+			"name": "dice_5_b_png",
+			"type": "image",
+			"url": "images/dice_5_b.png"
+		},
+		{
+			"name": "dice_6_b_png",
+			"type": "image",
+			"url": "images/dice_6_b.png"
+		},
+		{
+			"name": "account_list_setting_json",
+			"type": "json",
+			"url": "config/account_list_setting.json"
+		},
+		{
+			"name": "icon_png",
+			"type": "image",
+			"url": "images/icon.png"
+		},
+		{
+			"name": "server_gate_setting_json",
+			"type": "json",
+			"url": "config/server_gate_setting.json"
+		}
+	]
+}

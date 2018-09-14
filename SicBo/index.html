@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="portrait"
+         data-scale-mode="showAll"
+         data-frame-rate="30"
+         data-content-width="640"
+         data-content-height="1136"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <input type="hidden" id="userToken" value="" />
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>    
+<script>
+
+    
+    var loadSingleScript = function (src, callback) {
+        var s = document.createElement('script');
+        s.async = false;
+        s.src = src;
+        s.addEventListener('load', function () {
+            s.parentNode.removeChild(s);
+            s.removeEventListener('load', arguments.callee, false);
+            callback();
+        }, false);
+        document.body.appendChild(s);
+    };
+
+    var loadScript = function (list, callback) {
+        var loaded = 0;
+        var loadNext = function () {
+            loadSingleScript(list[loaded], function () {
+                loaded++;
+                if (loaded >= list.length) {
+                    callback();
+                }
+                else {
+                    loadNext();
+                }
+            })
+        };
+        loadNext();
+    };
+
+    var UserTokenProvider = {
+        GetUserTokenFromParam:function(){
+            return UtilTools.GetUrlParam("usertoken");
+        }
+    }
+
+    var RequestChannel = {
+        Weixin:"weixin",
+        Default:"page",
+        IsWeiXin:function(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        GetRequestChannel:function(){
+            if(RequestChannel.IsWeiXin()){
+                return RequestChannel.Weixin;
+            }
+            return RequestChannel.Default;
+        }
+    };
+
+    var PageRouter = {
+        RouteAPI:'http://localhost:42404/api?postUrl=',
+        ToLoginPage:function(){
+            window.location.href = '404.html?timestamp=' + (new Date()).getTime();
+            return;
+        }
+    }
+
+    var UtilTools = {
+        StringIsInvalid:function(str){
+            return str == null || str == undefined || str == "" || str == "null" ;
+        },
+        GetUrlParam:function(name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return decodeURI(r[2]); return null; //返回参数值
+        }
+    }
+
+    // 初始进入情况，获取进入渠道
+    var GameStarter = {
+        startGame:function(){
+            var channel = RequestChannel.GetRequestChannel();
+            // 读取UserToken
+            var usertoken = UtilTools.GetUrlParam("usertoken");
+            if(channel == RequestChannel.Default){
+                // 非微信渠道
+                if(UtilTools.StringIsInvalid(usertoken)){
+                    return PageRouter.ToLoginPage();
+                }
+                GameStarter.checkUserTokenAndRunGame(usertoken,PageRouter.ToLoginPage);
+                return;
+            }
+            if(channel == RequestChannel.Weixin){
+                // 微信渠道
+                if(!UtilTools.StringIsInvalid(usertoken)){
+                    GameStarter.checkUserTokenAndRunGame(usertoken,PageRouter.ToLoginPage);
+                    return;
+                }
+
+                var url = escape(window.location.href);
+                url = "http://wx.guditech.com/home/gotourlToken?url=" + url +'&'+Math.random();
+                window.location.href = url;
+                return;
+            }
+        },
+        checkUserTokenAndRunGame:function(usertoken,unloginHandler){
+
+                var checkUserTokenUrl = PageRouter.RouteAPI+'http://123.206.174.209:81/Account/CheckUserToken&usertoken='+usertoken+'&paramData=&ran='+Math.random();
+                $.ajax({
+                    type:'get',
+                    url:encodeURI(checkUserTokenUrl),
+                    dataType:'json',
+                    async:true,
+                    success: function(data){
+                        console.log(data);
+                        if(data.State != 'success'){
+                            alert("user unlogin");
+                            unloginHandler();
+                            return;
+                        } 
+                        document.getElementById("userToken").setAttribute("value",usertoken);
+                        GameStarter.runGame();
+                        return;
+                    },
+                    error: function(data){
+                        console.log(data);
+                    }
+                });
+        },
+        runGame:function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+            xhr.addEventListener("load", function () {
+                var manifest = JSON.parse(xhr.response);
+                var list = manifest.initial.concat(manifest.game);
+                loadScript(list, function () {
+                    egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }});
+                });
+            });
+            xhr.send(null);
+        }
+    };
+    GameStarter.startGame();
+</script>
+</body>
+
+</html>

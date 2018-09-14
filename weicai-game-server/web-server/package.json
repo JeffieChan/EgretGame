@@ -1,0 +1,10 @@
+{
+	"name": "chatofpomelo",
+	"version": "0.0.1",
+	"private": false,
+	"dependencies": {
+		"amqp": "^0.2.6",
+		"express": "3.4.0",
+		"redis": "^2.8.0"
+	}
+}

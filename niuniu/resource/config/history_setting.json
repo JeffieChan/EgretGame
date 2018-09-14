@@ -1,0 +1,25 @@
+{
+    "bgColor": "0x000000",
+    "alpha": 0.5,
+    "title":{
+        "titleText":"参与记录",
+        "textColor":"0xa86d3d",
+        "textSize":35,
+        "titleWidth":750,
+        "top":209,
+        "font":"苹方"
+    },
+    "icon": "弹出面板_png",
+    "closeIcon":"关闭按钮_png",
+    "row": [
+        {
+            "rowHeight": 50,
+            "bottomBorderColor": 10737039,
+            "bgColor": 16777215,
+            "textColor": 8417649,
+            "textSize": 20
+        }
+    ]
+  
+    
+}

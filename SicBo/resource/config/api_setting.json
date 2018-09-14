@@ -1,0 +1,13 @@
+{
+    "GameRoot":"http://123.206.174.209:81/OtherGame/"
+    ,"AccountRoot":"http://123.206.174.209:81/Account/"
+    ,"APPLICATION":"Game"
+    ,"RouteAPI":"http://localhost:42404/api"
+    ,"DEVICE_NO":"666"
+    ,"GetGameConfig":"GetGame_666_Options"
+    ,"GetScheduleList":"GetGame_666_LottoryHis"
+    ,"GetNextSchedule":"GetGame_666_Schedule"
+    ,"GetAccountData":"GetAccountMoneySummary"
+    ,"GetMyBetList":"GetGame_666_BetRecord"
+    ,"GetMyBetDetail":"GetGame_666_BetRecode_Details"
+}

@@ -1,0 +1,41 @@
+{
+    "bgColor":16777215,
+    "title":{
+        "titleText":"#scheduleName#投注详情",
+        "titleHeight":90,
+        "titleBgColor":16777215,
+        "titleBgAlpha":1,
+        "textColor":0,
+        "textSize":32,
+        "titleWidth":750,
+        "font":"苹方"
+    },
+    "row":[{
+        "rowHeight":70,
+        "bottomBorderColor":10737039,
+        "bgColor":16777215,
+        "textColor":8417649,
+        "textSize":20
+    },{
+        "rowHeight":70,
+        "bottomBorderColor":10737039,
+        "bgColor":15532004,
+        "textColor":8417649,
+        "textSize":20
+    }],
+    "columns":[
+        {"text":"投注类型", "columnWidth":235,"left":0}
+        ,{"text":"投注金额", "columnWidth":280,"left":235}
+        ,{"text":"中奖金额", "columnWidth":235,"left":515}
+    ],
+    "header":{
+        
+        "headerHeight":60,
+        "splitColor":10737039,
+        "bgColor":13302966,
+        "textSize":20,
+        "textColor":0,
+        "font":"苹方"
+    }
+
+}

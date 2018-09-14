@@ -1,0 +1,36 @@
+{
+    "bgColor":16777215,
+    "title":{
+        "titleText":"历史记录",
+        "titleHeight":90,
+        "titleBgColor":16777215,
+        "titleBgAlpha":1,
+        "textColor":0,
+        "textSize":32,
+        "titleWidth":750,
+        "font":"苹方"
+    },
+    "row":[{
+        "rowHeight":50,
+        "bottomBorderColor":10737039,
+        "bgColor":16777215,
+        "textColor":8417649,
+        "textSize":20
+    }],
+    "columns":[
+        {"text":"游戏期号", "columnWidth":228,"left":0}
+        ,{"text":"开奖号码", "columnWidth":160,"left":228}
+        ,{"text":"和值", "columnWidth":130,"left":388}
+        ,{"text":"开奖时间", "columnWidth":232,"left":518}
+    ],
+    "header":{
+        
+        "headerHeight":54,
+        "splitColor":10737039,
+        "bgColor":13302966,
+        "textSize":20,
+        "textColor":0,
+        "font":"苹方"
+    }
+
+}

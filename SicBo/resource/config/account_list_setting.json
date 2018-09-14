@@ -1,0 +1,32 @@
+{
+    "bgColor":16777215,
+    "title":{
+        "titleText":"房间玩家列表",
+        "titleHeight":90,
+        "titleBgColor":16777215,
+        "titleBgAlpha":1,
+        "textColor":0,
+        "textSize":32,
+        "titleWidth":750,
+        "font":"苹方"
+    },
+    "header":{
+        "headerHeight":54,
+        "splitColor":10737039,
+        "bgColor":13302966,
+        "textSize":20,
+        "textColor":0,
+        "font":"苹方"
+    },
+    "iconItemSetting":{
+        "textColor":0,
+        "textSize":12,
+        "font":"苹方",
+        "iconWidth":70
+    },
+    "columnCount":5,
+    "showIcon":true,
+    "showTitle":true,
+    "contentPadding":10,
+    "rowHeight":150
+}

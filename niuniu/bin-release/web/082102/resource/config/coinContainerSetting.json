@@ -1,0 +1,13 @@
+{
+    "backgroundImage":"coinlistbg_png",
+    "padding":50,
+    "normalWidth":109,
+    "normalHeight":116,
+    "activatedScale":1.2,
+    "coins":[
+        {"coinValue":100,"coinIcon":"100-1_png","activatedIcon":"100-2_png","unActivatedIcon":"100-3_png"}
+        ,{"coinValue":500,"coinIcon":"500-1_png","activatedIcon":"500-2_png","unActivatedIcon":"500-3_png"}
+        ,{"coinValue":1000,"coinIcon":"1000-1_png","activatedIcon":"1000-2_png","unActivatedIcon":"1000-3_png"}
+        ,{"coinValue":5000,"coinIcon":"5000-1_png","activatedIcon":"5000-2_png","unActivatedIcon":"5000-3_png"}
+    ]
+}

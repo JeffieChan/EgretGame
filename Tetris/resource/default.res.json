@@ -1,0 +1,349 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,暂停_png,下_png,进度条1_png,礼包_png,提示点_png,下一个_png,旋转_png,右_png,主面板_png,左_png,搞怪方块_png,积分_png,即将超越_png,加速下_png,方块1_png,方块2_png,方块3_png,方块4_png,方块5_png,方块6_png,方块7_png,方块8_png,bg2_png,game_setting_json,brick_setting_json,进度条2_png,分享好友b_png,得分底_png,再来一次b_png,图标ico_png,猜豆复活b_png,结束游戏b_png,继续游戏b_png,重新开始b_png",
+			"name": "preload"
+		},
+		{
+			"keys": "成绩b_png,加载动画22_json,加载动画22_png,开始游戏按钮_png,礼包b_png,排行b_png,图标_png,bg2_png,game_setting_json",
+			"name": "load"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "images/MainGameScene/暂停.png",
+			"type": "image",
+			"name": "暂停_png"
+		},
+		{
+			"url": "images/MainGameScene/下.png",
+			"type": "image",
+			"name": "下_png"
+		},
+		{
+			"url": "images/MainGameScene/进度条1.png",
+			"type": "image",
+			"name": "进度条1_png"
+		},
+		{
+			"url": "images/MainGameScene/礼包.png",
+			"type": "image",
+			"name": "礼包_png"
+		},
+		{
+			"url": "images/MainGameScene/提示点.png",
+			"type": "image",
+			"name": "提示点_png"
+		},
+		{
+			"url": "images/MainGameScene/下一个.png",
+			"type": "image",
+			"name": "下一个_png"
+		},
+		{
+			"url": "images/MainGameScene/旋转.png",
+			"type": "image",
+			"name": "旋转_png"
+		},
+		{
+			"url": "images/MainGameScene/右.png",
+			"type": "image",
+			"name": "右_png"
+		},
+		{
+			"url": "images/MainGameScene/主面板.png",
+			"type": "image",
+			"name": "主面板_png"
+		},
+		{
+			"url": "images/MainGameScene/左.png",
+			"type": "image",
+			"name": "左_png"
+		},
+		{
+			"url": "images/MainGameScene/搞怪方块.png",
+			"type": "image",
+			"name": "搞怪方块_png"
+		},
+		{
+			"url": "images/MainGameScene/积分.png",
+			"type": "image",
+			"name": "积分_png"
+		},
+		{
+			"url": "images/MainGameScene/即将超越.png",
+			"type": "image",
+			"name": "即将超越_png"
+		},
+		{
+			"url": "images/MainGameScene/加速下.png",
+			"type": "image",
+			"name": "加速下_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块1.png",
+			"type": "image",
+			"name": "方块1_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块2.png",
+			"type": "image",
+			"name": "方块2_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块3.png",
+			"type": "image",
+			"name": "方块3_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块4.png",
+			"type": "image",
+			"name": "方块4_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块5.png",
+			"type": "image",
+			"name": "方块5_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块6.png",
+			"type": "image",
+			"name": "方块6_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块7.png",
+			"type": "image",
+			"name": "方块7_png"
+		},
+		{
+			"url": "images/MainGameScene/方块/方块8.png",
+			"type": "image",
+			"name": "方块8_png"
+		},
+		{
+			"url": "images/LoadScene/加载动画/加载动画22.json",
+			"type": "json",
+			"name": "加载动画22_json"
+		},
+		{
+			"url": "images/LoadScene/加载动画/加载动画22.png",
+			"type": "image",
+			"name": "加载动画22_png"
+		},
+		{
+			"url": "images/LoadScene/开始游戏按钮.png",
+			"type": "image",
+			"name": "开始游戏按钮_png"
+		},
+		{
+			"url": "images/LoadScene/排行b.png",
+			"type": "image",
+			"name": "排行b_png"
+		},
+		{
+			"url": "images/LoadScene/成绩b.png",
+			"type": "image",
+			"name": "成绩b_png"
+		},
+		{
+			"url": "images/LoadScene/礼包b.png",
+			"type": "image",
+			"name": "礼包b_png"
+		},
+		{
+			"url": "images/LoadScene/图标.png",
+			"type": "image",
+			"name": "图标_png"
+		},
+		{
+			"url": "images/LoadScene/bg2.png",
+			"type": "image",
+			"name": "bg2_png"
+		},
+		{
+			"url": "config/game_setting.json",
+			"type": "json",
+			"name": "game_setting_json"
+		},
+		{
+			"name": "brick_setting_json",
+			"type": "json",
+			"url": "config/brick_setting.json"
+		},
+		{
+			"name": "进度条2_png",
+			"type": "image",
+			"url": "images/MainGameScene/进度条2.png"
+		},
+		{
+			"name": "分享好友b_png",
+			"type": "image",
+			"url": "images/GameOverScene/分享好友b.png"
+		},
+		{
+			"name": "得分底_png",
+			"type": "image",
+			"url": "images/GameOverScene/得分底.png"
+		},
+		{
+			"name": "再来一次b_png",
+			"type": "image",
+			"url": "images/GameOverScene/再来一次b.png"
+		},
+		{
+			"name": "图标ico_png",
+			"type": "image",
+			"url": "images/GameOverScene/图标ico.png"
+		},
+		{
+			"name": "猜豆复活b_png",
+			"type": "image",
+			"url": "images/GameOverScene/猜豆复活b.png"
+		},
+		{
+			"name": "结束游戏b_png",
+			"type": "image",
+			"url": "images/GameOverScene/结束游戏b.png"
+		},
+		{
+			"name": "继续游戏b_png",
+			"type": "image",
+			"url": "images/GameOverScene/继续游戏b.png"
+		},
+		{
+			"name": "重新开始b_png",
+			"type": "image",
+			"url": "images/GameOverScene/重新开始b.png"
+		}
+	]
+}

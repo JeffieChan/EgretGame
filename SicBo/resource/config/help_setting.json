@@ -1,0 +1,22 @@
+{
+    "bgColor":16777215,
+    "title":{
+        "titleText":"玩法介绍",
+        "titleHeight":90,
+        "titleBgColor":16777215,
+        "titleBgAlpha":1,
+        "textColor":0,
+        "textSize":32,
+        "titleWidth":750,
+        "font":"苹方"
+    },
+    "header":{
+        "headerHeight":54,
+        "splitColor":10737039,
+        "bgColor":13302966,
+        "textSize":20,
+        "textColor":0,
+        "font":"苹方"
+    }
+
+}

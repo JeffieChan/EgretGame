@@ -1,0 +1,43 @@
+{
+    "bgColor":16777215,
+    "title":{
+        "titleText":"走势图",
+        "titleHeight":90,
+        "titleBgColor":16777215,
+        "titleBgAlpha":1,
+        "textColor":0,
+        "textSize":32,
+        "titleWidth":750,
+        "font":"苹方"
+    },
+    "row":[{
+        "rowHeight":70,
+        "bottomBorderColor":10737039,
+        "bgColor":16777215,
+        "textColor":8417649,
+        "textSize":20
+    },{
+        "rowHeight":70,
+        "bottomBorderColor":10737039,
+        "bgColor":15532004,
+        "textColor":8417649,
+        "textSize":20
+    }],
+    "columns":[
+        {"text":"期号", "columnWidth":210,"left":0}
+        ,{"text":"开奖号码", "columnWidth":160,"left":210}
+        ,{"text":"和值", "columnWidth":100,"left":370}
+        ,{"text":"大         小", "columnWidth":140,"left":470}
+        ,{"text":"单         双", "columnWidth":140,"left":610}
+    ],
+    "header":{
+        
+        "headerHeight":60,
+        "splitColor":10737039,
+        "bgColor":13302966,
+        "textSize":20,
+        "textColor":0,
+        "font":"苹方"
+    }
+
+}

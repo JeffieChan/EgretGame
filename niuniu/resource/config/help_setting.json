@@ -1,0 +1,14 @@
+{
+    "bgColor": "0x000000",
+    "alpha": 0.5,
+    "title":{
+        "titleText":"玩法说明",
+        "textColor":"0xa86d3d",
+        "textSize":35,
+        "titleWidth":750,
+        "top":209,
+        "font":"苹方"
+    },
+    "icon": "弹出面板_png",
+    "closeIcon":"关闭按钮_png"
+}

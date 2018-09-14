@@ -1,0 +1,165 @@
+
+class Main extends egret.DisplayObjectContainer{
+    private _isDebug:boolean = false;
+    private _createType:number = 0;
+    private world:p2.World;
+    public constructor() { 
+        super();
+        this.addEventListener(egret.Event.ADDED_TO_STAGE,this.onAddToStage,this);
+        
+    }
+
+
+    /**
+     * preload资源组加载完成
+     */
+    private onResourceLoadComplete(event:RES.ResourceEvent):void {
+        if (event.groupName == "preload") {
+            RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
+            RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
+            this.createGameScene();
+        }
+    }
+
+    /**
+     * preload资源组加载进度
+     */
+    private onResourceProgress(event:RES.ResourceEvent):void {
+    }
+    /**
+     * 配置文件加载完成,开始预加载preload资源组。
+     */
+    private onConfigComplete(event:RES.ResourceEvent):void {
+        RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
+        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
+        RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
+        RES.loadGroup("preload");
+    }
+    /**
+     * 创建游戏场景
+     */
+    private createGameScene():void {
+        this.createButtons();
+        this.createWorld();
+        this.createGround();
+
+        this.stage.addEventListener(egret.Event.ENTER_FRAME, this.onEnterFrame, this);
+        this.stage.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onStageTap,this);
+    }
+    private createGround():void{
+        var stageHeight:number = this.stage.stageHeight;
+        var groundShape:p2.Plane = new p2.Plane();
+        var groundBody:p2.Body = new p2.Body();
+        groundBody.position[1] = 0;
+        groundBody.addShape(groundShape);
+        groundBody.displays = [];
+        this.world.addBody(groundBody);
+    }
+    private createWorld():void{
+        var world:p2.World = new p2.World();
+        world.sleepMode = p2.World.BODY_SLEEPING;
+        world.gravity = [0,-9.82];
+        world.defaultContactMaterial.restitution = 0.6;
+        this.world = world;
+        
+    }
+    private createButtons():void{
+        let btnBrick:egret.Sprite = new egret.Sprite();
+        btnBrick.graphics.beginFill(0xEEEEEE);
+        btnBrick.graphics.drawRect(0,0,200,50);
+        btnBrick.graphics.endFill();
+        this.addChild(btnBrick);
+        btnBrick.touchEnabled = true;
+        btnBrick.addEventListener(egret.TouchEvent.TOUCH_TAP, (evt:egret.TouchEvent)=>{
+            this._createType = 0;
+        }, this);
+        btnBrick.x = 50;
+        btnBrick.y = 50;
+
+        let btnBall:egret.Sprite = new egret.Sprite();
+        btnBall.graphics.beginFill(0x336633);
+        btnBall.graphics.drawRect(0,0,200,50);
+        btnBall.graphics.endFill();
+        this.addChild(btnBall);
+        btnBall.touchEnabled = true;
+        btnBall.addEventListener(egret.TouchEvent.TOUCH_TAP, (evt:egret.TouchEvent)=>{
+            this._createType = 1;
+        }, this);
+        btnBall.x = 300;
+        btnBall.y = 50;
+    }
+    private onAddToStage(event:egret.Event){
+
+        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
+        RES.loadConfig("resource/default.res.json", "resource/");
+        
+
+    }
+    private onEnterFrame(event:egret.Event){
+        this.world.step(60/1000);
+        var stageHeight:number = this.stage.stageHeight;
+        var l = this.world.bodies.length;
+        this.world.bodies.forEach((boxBody:p2.Body)=>{
+            if(!boxBody.displays)
+                return;
+            var box:egret.DisplayObject = boxBody.displays[0];
+            if (box) {
+                box.x = boxBody.position[0];
+                box.y = boxBody.position[1];
+                box.rotation = 360 - boxBody.angle * 180 / Math.PI;
+                if (boxBody.sleepState == p2.Body.SLEEPING) {
+                    box.alpha = 0.5;
+                }
+                else {
+                    box.alpha = 1;
+                }
+            }
+        });
+    }
+    private onStageTap(event:egret.TouchEvent){
+        let self = this;
+        let positionX = event.stageX;
+        let positionY = event.stageY;
+        if(this._createType == 0){
+            this.addNewBall(positionX,positionY);
+            return;
+        }
+        if(this._createType == 1){
+            this.addNewBrick(positionX,positionY);
+            return;
+        }
+
+    }
+    private addNewBall(positionX,positionY){
+        let self = this;
+            var ball:CustomUI.BallUI = new CustomUI.BallUI(10,1);
+            ball.position = [positionX,positionY];
+            this.world.addBody(ball);
+            ball.displays.forEach((displayItem)=>{
+                self.addChild(displayItem);
+                displayItem.x = positionX;
+                displayItem.y = positionY;
+            });
+    }
+    private addNewBrick(positionX,positionY){
+        let self = this;
+            var brick:CustomUI.BrickUI = new CustomUI.BrickUI(50);
+            brick.position = [positionX,positionY];
+            this.world.addBody(brick);
+            brick.displays.forEach((displayItem)=>{
+                self.addChild(displayItem);
+                displayItem.x = positionX;
+                displayItem.y = positionY;
+            });
+    }
+
+    /**
+     * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
+     */
+    private createBitmapByName(name:string):egret.Bitmap {
+        var result:egret.Bitmap = new egret.Bitmap();
+        var texture:egret.Texture = RES.getRes(name);
+        result.texture = texture;
+        return result;
+    }
+}

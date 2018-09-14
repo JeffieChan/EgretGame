@@ -1,0 +1,359 @@
+{
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "GameConfig_json,bg_png,topbow_left_png,topbow_right_png,btn_pause_png,icon_power_up_png,icon_split_png,icon_tool_double_png,icon_tool_laser_png,menu_bg_png,btn_start_game_png,btn_rate_png,btn_history_png,btn_invite_png,btn_continue_png,btn_tomain_png,panel_bg_png,panel_icon_double_png,panel_close_png,laser_json,laser_aiming_ling_png,laser_dot_png,laser_line_png,btn_speedup_png,server_gate_setting_json,btn_back_png,panel_icon_laser_png,btn_finish_game_png,btn_pause_share_png,btn_pause_restart_png,panel_icon_terminal_png,icon_benefit_png,btn_benefit_png,panel_icon_bonus_png,panel_icon_gold_png,panel_btn_use_png,panel_btn_getmore_png,frist_run_pic_png,laser_cannon_png,btn_confirm_disabled_bg_png,laser_ready_msg_png,double_ready_msg_png,panel_title_rate_png,panel_title_history_png,loading_bg_jpg,icon_unread_png,btn_revive_free_png,btn_blue_bg_png,ground_front_png,revive_msg_png,free_use_png,btn_terminal_restart_png,roundbrick_json,roundbrick_png,polygon_3_json,polygon_3_png,polygon_5_png,polygon_5_json,polygon_4_json,polygon_4_png,wx_verify_common_png,wx_verify_revive_png,x_png,btn_yellow_bg_png,wx_verify_tool_png,wx_verify_icon_png"
+		},
+		{
+			"name": "loading",
+			"keys": "loading_bg_jpg,loadingAnimate_json,loadingAnimate_png,game_logo_png"
+		}
+	],
+	"resources": [
+		{
+			"name": "GameConfig_json",
+			"type": "json",
+			"url": "config/GameConfig.json"
+		},
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "assets/bg.png"
+		},
+		{
+			"name": "topbow_left_png",
+			"type": "image",
+			"url": "assets/topbow_left.png"
+		},
+		{
+			"name": "topbow_right_png",
+			"type": "image",
+			"url": "assets/topbow_right.png"
+		},
+		{
+			"name": "btn_pause_png",
+			"type": "image",
+			"url": "assets/btn_pause.png"
+		},
+		{
+			"name": "icon_power_up_png",
+			"type": "image",
+			"url": "assets/icon_power_up.png"
+		},
+		{
+			"name": "icon_split_png",
+			"type": "image",
+			"url": "assets/icon_split.png"
+		},
+		{
+			"name": "icon_tool_double_png",
+			"type": "image",
+			"url": "assets/icon_tool_double.png"
+		},
+		{
+			"name": "icon_tool_laser_png",
+			"type": "image",
+			"url": "assets/icon_tool_laser.png"
+		},
+		{
+			"name": "menu_bg_png",
+			"type": "image",
+			"url": "assets/menu_bg.png"
+		},
+		{
+			"name": "btn_start_game_png",
+			"type": "image",
+			"url": "assets/btn_start_game.png"
+		},
+		{
+			"name": "btn_rate_png",
+			"type": "image",
+			"url": "assets/btn_rate.png"
+		},
+		{
+			"name": "btn_history_png",
+			"type": "image",
+			"url": "assets/btn_history.png"
+		},
+		{
+			"name": "btn_invite_png",
+			"type": "image",
+			"url": "assets/btn_invite.png"
+		},
+		{
+			"name": "btn_continue_png",
+			"type": "image",
+			"url": "assets/btn_continue.png"
+		},
+		{
+			"name": "btn_tomain_png",
+			"type": "image",
+			"url": "assets/btn_tomain.png"
+		},
+		{
+			"name": "panel_bg_png",
+			"type": "image",
+			"url": "assets/panel_bg.png"
+		},
+		{
+			"name": "panel_icon_double_png",
+			"type": "image",
+			"url": "assets/panel_icon_double.png"
+		},
+		{
+			"name": "panel_close_png",
+			"type": "image",
+			"url": "assets/panel_close.png"
+		},
+		{
+			"name": "laser_json",
+			"type": "json",
+			"url": "assets/laserParticle/laser.json"
+		},
+		{
+			"name": "laser_aiming_ling_png",
+			"type": "image",
+			"url": "assets/laser_aiming_ling.png"
+		},
+		{
+			"name": "laser_dot_png",
+			"type": "image",
+			"url": "assets/laserParticle/laser_dot.png"
+		},
+		{
+			"name": "laser_line_png",
+			"type": "image",
+			"url": "assets/laser_line.png"
+		},
+		{
+			"name": "btn_speedup_png",
+			"type": "image",
+			"url": "assets/btn_speedup.png"
+		},
+		{
+			"name": "server_gate_setting_json",
+			"type": "json",
+			"url": "config/server_gate_setting.json"
+		},
+		{
+			"name": "btn_back_png",
+			"type": "image",
+			"url": "assets/btn_back.png"
+		},
+		{
+			"name": "panel_icon_laser_png",
+			"type": "image",
+			"url": "assets/panel_icon_laser.png"
+		},
+		{
+			"name": "btn_finish_game_png",
+			"type": "image",
+			"url": "assets/btn_finish_game.png"
+		},
+		{
+			"name": "btn_pause_share_png",
+			"type": "image",
+			"url": "assets/btn_pause_share.png"
+		},
+		{
+			"name": "btn_pause_restart_png",
+			"type": "image",
+			"url": "assets/btn_pause_restart.png"
+		},
+		{
+			"name": "panel_icon_terminal_png",
+			"type": "image",
+			"url": "assets/panel_icon_terminal.png"
+		},
+		{
+			"name": "icon_benefit_png",
+			"type": "image",
+			"url": "assets/icon_benefit.png"
+		},
+		{
+			"name": "btn_benefit_png",
+			"type": "image",
+			"url": "assets/btn_benefit.png"
+		},
+		{
+			"name": "panel_icon_bonus_png",
+			"type": "image",
+			"url": "assets/panel_icon_bonus.png"
+		},
+		{
+			"name": "panel_icon_gold_png",
+			"type": "image",
+			"url": "assets/panel_icon_gold.png"
+		},
+		{
+			"name": "panel_btn_use_png",
+			"type": "image",
+			"url": "assets/panel_btn_use.png"
+		},
+		{
+			"name": "panel_btn_getmore_png",
+			"type": "image",
+			"url": "assets/panel_btn_getmore.png"
+		},
+		{
+			"name": "frist_run_pic_png",
+			"type": "image",
+			"url": "assets/frist_run_pic.png"
+		},
+		{
+			"name": "laser_cannon_png",
+			"type": "image",
+			"url": "assets/laser_cannon.png"
+		},
+		{
+			"name": "btn_confirm_disabled_bg_png",
+			"type": "image",
+			"url": "assets/btn_confirm_disabled_bg.png"
+		},
+		{
+			"name": "laser_ready_msg_png",
+			"type": "image",
+			"url": "assets/laser_ready_msg.png"
+		},
+		{
+			"name": "double_ready_msg_png",
+			"type": "image",
+			"url": "assets/double_ready_msg.png"
+		},
+		{
+			"name": "panel_title_rate_png",
+			"type": "image",
+			"url": "assets/panel_title_rate.png"
+		},
+		{
+			"name": "panel_title_history_png",
+			"type": "image",
+			"url": "assets/panel_title_history.png"
+		},
+		{
+			"name": "loading_bg_jpg",
+			"type": "image",
+			"url": "assets/loading_bg.jpg"
+		},
+		{
+			"name": "loadingAnimate_json",
+			"type": "json",
+			"url": "assets/loading/loadingAnimate.json"
+		},
+		{
+			"name": "loadingAnimate_png",
+			"type": "image",
+			"url": "assets/loading/loadingAnimate.png"
+		},
+		{
+			"name": "game_logo_png",
+			"type": "image",
+			"url": "assets/game_logo.png"
+		},
+		{
+			"name": "icon_unread_png",
+			"type": "image",
+			"url": "assets/icon_unread.png"
+		},
+		{
+			"name": "btn_revive_free_png",
+			"type": "image",
+			"url": "assets/btn_revive_free.png"
+		},
+		{
+			"name": "btn_blue_bg_png",
+			"type": "image",
+			"url": "assets/btn_blue_bg.png"
+		},
+		{
+			"name": "ground_front_png",
+			"type": "image",
+			"url": "assets/ground_front.png"
+		},
+		{
+			"name": "revive_msg_png",
+			"type": "image",
+			"url": "assets/revive_msg.png"
+		},
+		{
+			"name": "free_use_png",
+			"type": "image",
+			"url": "assets/free_use.png"
+		},
+		{
+			"name": "btn_terminal_restart_png",
+			"type": "image",
+			"url": "assets/btn_terminal_restart.png"
+		},
+		{
+			"name": "roundbrick_json",
+			"type": "json",
+			"url": "assets/movieclips/roundbrick.json"
+		},
+		{
+			"name": "roundbrick_png",
+			"type": "image",
+			"url": "assets/movieclips/roundbrick.png"
+		},
+		{
+			"name": "polygon_3_json",
+			"type": "json",
+			"url": "assets/movieclips/polygon_3.json"
+		},
+		{
+			"name": "polygon_3_png",
+			"type": "image",
+			"url": "assets/movieclips/polygon_3.png"
+		},
+		{
+			"name": "polygon_5_png",
+			"type": "image",
+			"url": "assets/movieclips/polygon_5.png"
+		},
+		{
+			"name": "polygon_5_json",
+			"type": "json",
+			"url": "assets/movieclips/polygon_5.json"
+		},
+		{
+			"name": "polygon_4_json",
+			"type": "json",
+			"url": "assets/movieclips/polygon_4.json"
+		},
+		{
+			"name": "polygon_4_png",
+			"type": "image",
+			"url": "assets/movieclips/polygon_4.png"
+		},
+		{
+			"name": "wx_verify_common_png",
+			"type": "image",
+			"url": "assets/wx_verify_common.png"
+		},
+		{
+			"name": "wx_verify_revive_png",
+			"type": "image",
+			"url": "assets/wx_verify_revive.png"
+		},
+		{
+			"name": "x_png",
+			"type": "image",
+			"url": "assets/x.png"
+		},
+		{
+			"name": "btn_yellow_bg_png",
+			"type": "image",
+			"url": "assets/btn_yellow_bg.png"
+		},
+		{
+			"name": "wx_verify_tool_png",
+			"type": "image",
+			"url": "assets/wx_verify_tool.png"
+		},
+		{
+			"name": "wx_verify_icon_png",
+			"type": "image",
+			"url": "assets/wx_verify_icon.png"
+		}
+	]
+}
